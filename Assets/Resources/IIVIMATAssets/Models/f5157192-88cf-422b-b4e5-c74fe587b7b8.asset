@@ -1,0 +1,539 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8603738283190358019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b3e8ad910d35948a96e8bed6ba69b1, type: 3}
+  m_Name: Node_063c9405-0642-478e-9993-da0f50858010
+  m_EditorClassIdentifier: 
+  position: {x: 63, y: 938}
+  title: SphereMid
+  uniqueID: {fileID: 0}
+  objectID: c2305983-bae5-492e-af7a-5f574de8faeb
+--- !u!114 &-7994890726596239997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_6a50da04-d306-4bd2-a286-a902ad88c2a9
+  m_EditorClassIdentifier: 
+  position: {x: 513, y: 49}
+  title: iivimat.OrientationTransform-16694
+  reaction: {fileID: 0}
+  reactionID: cb3faa25-201b-4b48-bb2e-e2d97ffb0bcf
+--- !u!114 &-7979779244785764614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b3e8ad910d35948a96e8bed6ba69b1, type: 3}
+  m_Name: Node_f7c7ab17-b737-48cb-b6d6-085a9f1f8725
+  m_EditorClassIdentifier: 
+  position: {x: 110, y: 261}
+  title: Sphere
+  uniqueID: {fileID: 0}
+  objectID: 5318b387-d352-4abb-9d6f-483dc252e3ec
+--- !u!114 &-7810259111464554510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_cb299999-1041-43ef-b14e-dbd71e6efc8e
+  m_EditorClassIdentifier: 
+  input: {fileID: 1067365722918866470}
+  output: {fileID: -8603738283190358019}
+--- !u!114 &-7381003449742823801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_188d5be8-3222-438f-801b-91a02086c9fd
+  m_EditorClassIdentifier: 
+  input: {fileID: -6408664824055291013}
+  output: {fileID: 6454894315102821232}
+--- !u!114 &-6408664824055291013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_88115a65-dfec-4a41-8de6-d0f65def2e62
+  m_EditorClassIdentifier: 
+  position: {x: 514, y: 276}
+  title: iivimat.ScaleTransform-16724
+  reaction: {fileID: 0}
+  reactionID: 9fdc889a-9a82-4a5c-81a6-86d1add6af38
+--- !u!114 &-6226309326622534458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_f26a059a-d372-4e56-a670-a0f8b121d0e0
+  m_EditorClassIdentifier: 
+  input: {fileID: 7711283568449284268}
+  output: {fileID: 1067365722918866470}
+--- !u!114 &-5073124310815404937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_0635a494-e62e-4383-abb7-53633862bc80
+  m_EditorClassIdentifier: 
+  position: {x: 423, y: 1436}
+  title: iivimat.ColorChange-44576
+  reaction: {fileID: 0}
+  reactionID: 397c9117-d2b9-4ad6-bdee-27c7992f4102
+--- !u!114 &-5004362011124147037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_857a7faa-b335-41c7-bd81-1880ec0b6f98
+  m_EditorClassIdentifier: 
+  input: {fileID: 1067365722918866470}
+  output: {fileID: -8603738283190358019}
+--- !u!114 &-4330800493717418197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_2b90e159-5e08-43a6-ab19-9c039c96795a
+  m_EditorClassIdentifier: 
+  position: {x: 518, y: 730}
+  title: iivimat.ColorChange-3682
+  reaction: {fileID: 0}
+  reactionID: 6ad9fdb6-c6ad-464d-b098-cb9f7e47dcc0
+--- !u!114 &-4033455441117555436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b3e8ad910d35948a96e8bed6ba69b1, type: 3}
+  m_Name: Node_a591bd2e-31fe-42fd-ae6d-c74f6f1f33a8
+  m_EditorClassIdentifier: 
+  position: {x: -180, y: 1495}
+  title: 360VideoSphere
+  uniqueID: {fileID: 0}
+  objectID: 631db715-820a-4cde-90c1-81bd8bf0bc23
+--- !u!114 &-2538472209690955693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_4e24a45a-4255-4ac1-9d3d-3da55cd6be0f
+  m_EditorClassIdentifier: 
+  position: {x: 518, y: 481}
+  title: iivimat.PositionTransform-16752
+  reaction: {fileID: 0}
+  reactionID: 20c0eaaf-3cd9-4bc4-b389-7e2bccf013c0
+--- !u!114 &-811225206887786236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_84030fcb-1302-4ce6-a526-f156502ae162
+  m_EditorClassIdentifier: 
+  position: {x: 587.6661, y: 1804.9744}
+  title: iivimat.PauseVideo360-20358
+  reaction: {fileID: 0}
+  reactionID: 872489b7-8a28-4337-b528-4ec36238d6da
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726f4b26852d33a48b8185317e3d723c, type: 3}
+  m_Name: f5157192-88cf-422b-b4e5-c74fe587b7b8
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7979779244785764614}
+  - {fileID: 6454894315102821232}
+  - {fileID: -7994890726596239997}
+  - {fileID: -6408664824055291013}
+  - {fileID: -2538472209690955693}
+  - {fileID: -8603738283190358019}
+  - {fileID: 1067365722918866470}
+  - {fileID: -4330800493717418197}
+  - {fileID: 7711283568449284268}
+  - {fileID: 2435221064393610571}
+  - {fileID: -4033455441117555436}
+  - {fileID: 8429473425433023345}
+  - {fileID: -5073124310815404937}
+  edges:
+  - {fileID: 4974607787944609984}
+  - {fileID: 3290310264235049579}
+  - {fileID: -7381003449742823801}
+  - {fileID: 1432059902099050547}
+  - {fileID: -7810259111464554510}
+  - {fileID: 1712938717616426983}
+  - {fileID: -6226309326622534458}
+  - {fileID: 8409143629020832581}
+  - {fileID: 1453307564110064023}
+  - {fileID: 7353958038062852985}
+  - {fileID: -5004362011124147037}
+  - {fileID: 2526306797732206721}
+  - {fileID: 4194728381668083268}
+  - {fileID: 4517839667368306034}
+  - {fileID: 6838086951055442629}
+  - {fileID: 6620860824985396303}
+  - {fileID: 4539575002884806723}
+  - {fileID: 7121764424845258807}
+--- !u!114 &1067365722918866470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b7d4f3a9564f4408be75cd87b9b2e7, type: 3}
+  m_Name: Node_66cbfd56-32ac-46fa-8765-50a06ed34c74
+  m_EditorClassIdentifier: 
+  position: {x: 214, y: 931}
+  title: iivimat.Proximity-3632
+  action: {fileID: 0}
+  actionID: 4d8c5e3f-9bfe-4126-871e-7a69c5e06d5f
+--- !u!114 &1432059902099050547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_eb7f7d68-d2ec-4233-8df0-5336fa70267f
+  m_EditorClassIdentifier: 
+  input: {fileID: -2538472209690955693}
+  output: {fileID: 6454894315102821232}
+--- !u!114 &1453307564110064023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_e6a87c83-5669-493c-89d5-71a237fa6d9f
+  m_EditorClassIdentifier: 
+  input: {fileID: 2435221064393610571}
+  output: {fileID: 1067365722918866470}
+--- !u!114 &1712938717616426983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_c20a8bde-9e6f-4b0a-ba45-19c793116ba5
+  m_EditorClassIdentifier: 
+  input: {fileID: -4330800493717418197}
+  output: {fileID: 1067365722918866470}
+--- !u!114 &2435221064393610571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_96cc42f4-939e-42c8-9027-5ccf67c82a60
+  m_EditorClassIdentifier: 
+  position: {x: 536, y: 944}
+  title: iivimat.Visibility-4096
+  reaction: {fileID: 0}
+  reactionID: 60324e96-a413-4af8-a223-0ab7324cad3c
+--- !u!114 &2526306797732206721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_bcf8ab32-8fc9-433d-9d70-56cfcab7ead5
+  m_EditorClassIdentifier: 
+  input: {fileID: -4330800493717418197}
+  output: {fileID: 1067365722918866470}
+--- !u!114 &3290310264235049579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_7203c6be-78aa-4d5e-a6b1-88f91828708d
+  m_EditorClassIdentifier: 
+  input: {fileID: -7994890726596239997}
+  output: {fileID: 6454894315102821232}
+--- !u!114 &4194728381668083268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_578746a7-da35-4644-ba5b-f9cb639edcbc
+  m_EditorClassIdentifier: 
+  input: {fileID: 6454894315102821232}
+  output: {fileID: -7979779244785764614}
+--- !u!114 &4517839667368306034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_b01f289c-a35f-4408-abf0-e7c34a2d5470
+  m_EditorClassIdentifier: 
+  input: {fileID: -7994890726596239997}
+  output: {fileID: 6454894315102821232}
+--- !u!114 &4539575002884806723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_a2667eea-ec8e-463c-bf78-fd70f4e06db8
+  m_EditorClassIdentifier: 
+  input: {fileID: -5073124310815404937}
+  output: {fileID: 8429473425433023345}
+--- !u!114 &4974607787944609984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_e4cc1aea-da1d-49e6-9c2e-907e34a3043c
+  m_EditorClassIdentifier: 
+  input: {fileID: 6454894315102821232}
+  output: {fileID: -7979779244785764614}
+--- !u!114 &5571111832775557853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_79878610-c5bb-421b-bd0c-1c16c6c804f8
+  m_EditorClassIdentifier: 
+  position: {x: 455, y: 1436}
+  title: iivimat.PlayVideo360-20258
+  reaction: {fileID: 0}
+  reactionID: c5579fd8-046b-42f0-9c4e-04e902803b5c
+--- !u!114 &6454894315102821232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b7d4f3a9564f4408be75cd87b9b2e7, type: 3}
+  m_Name: Node_bcf4420b-2a7b-4ede-9f47-b3f5a516e6fd
+  m_EditorClassIdentifier: 
+  position: {x: 251, y: 259}
+  title: iivimat.LookAt-16652
+  action: {fileID: 0}
+  actionID: b65c15d9-daad-4b98-bf72-61f424d370bc
+--- !u!114 &6620860824985396303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_b9c5dc37-8f6f-43fb-a799-123274f25d64
+  m_EditorClassIdentifier: 
+  input: {fileID: -2538472209690955693}
+  output: {fileID: 6454894315102821232}
+--- !u!114 &6838086951055442629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_efcc36ca-89dd-4c2a-a941-f1aee15c6e06
+  m_EditorClassIdentifier: 
+  input: {fileID: -6408664824055291013}
+  output: {fileID: 6454894315102821232}
+--- !u!114 &7121764424845258807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_d59fb58f-db42-419b-9e7b-0e3416ef0f23
+  m_EditorClassIdentifier: 
+  input: {fileID: 8429473425433023345}
+  output: {fileID: -4033455441117555436}
+--- !u!114 &7353958038062852985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_60c888ea-5583-42ae-8e07-c9381306f1d7
+  m_EditorClassIdentifier: 
+  input: {fileID: 7711283568449284268}
+  output: {fileID: 1067365722918866470}
+--- !u!114 &7711283568449284268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
+  m_Name: Node_f9d3831d-2f64-47a2-a0d4-75ba217cf04e
+  m_EditorClassIdentifier: 
+  position: {x: 540, y: 1144}
+  title: iivimat.Transparence-3808
+  reaction: {fileID: 0}
+  reactionID: 287726a3-1934-4013-8328-e8d924e3c8ca
+--- !u!114 &8409143629020832581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_df395cee-7493-452f-a45b-e936abfa2634
+  m_EditorClassIdentifier: 
+  input: {fileID: 2435221064393610571}
+  output: {fileID: 1067365722918866470}
+--- !u!114 &8429473425433023345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b7d4f3a9564f4408be75cd87b9b2e7, type: 3}
+  m_Name: Node_4772b858-5c13-4726-93a7-70ad00ebefc2
+  m_EditorClassIdentifier: 
+  position: {x: 89, y: 1461}
+  title: iivimat.OnVideoEnd-44538
+  action: {fileID: 0}
+  actionID: 98731ba6-ef38-4f07-bdc9-bb9ea3c4ad5f
