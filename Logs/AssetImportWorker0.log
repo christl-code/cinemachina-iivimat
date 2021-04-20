@@ -1,61 +1,61 @@
 Using pre-set license
-Built from '2020.3/release' branch; Version is '2020.3.2f1 (8fd9074bf66c) revision 9427207'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.867; Version 2004; 64bit' Language: 'fr' Physical Memory: 16333 MB
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'fr' Physical Memory: 16215 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat
+C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55226
-Successfully changed project path to: D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat
-D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat
+62507
+Successfully changed project path to: C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject
+C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 51.78 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.94 ms.
-Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat/Assets
+Refreshing native plugins compatible for Editor in 44.77 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.03 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
     Vendor:   
-    VRAM:     8031 MB
-    Driver:   27.21.14.5671
+    VRAM:     5991 MB
+    Driver:   27.21.14.6589
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002772 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002229 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 38.74 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.04 ms.
+Refreshing native plugins compatible for Editor in 40.38 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.186 seconds
+- Completed reload, in  2.001 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007117 seconds.
+Registered in 0.009047 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -65,452 +65,49 @@ RoslynAnalysisRunner has terminated.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.57.0
 Mono: successfully reloaded assembly
-- Completed reload, in  0.925 seconds
+- Completed reload, in  0.865 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.05 ms.
-Unloading 1786 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 83.9 MB.
-System memory in use after: 84.0 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 1797 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 85.9 MB.
+System memory in use after: 85.9 MB.
 
-Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 2247.
-Total: 2.142300 ms (FindLiveObjects: 0.220700 ms CreateObjectMapping: 0.044300 ms MarkObjects: 1.789700 ms  DeleteObjects: 0.086600 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/personnage/JP_LEAUD.png
-  artifactKey: Guid(21d9753b3f0b14d45a292c3ef68d2f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/JP_LEAUD.png using Guid(21d9753b3f0b14d45a292c3ef68d2f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b94caa9e443ffb3ca8a9842b2d553a63') in 0.141802 seconds
-  Import took 0.144901 seconds .
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2264.
+Total: 1.889100 ms (FindLiveObjects: 0.201100 ms CreateObjectMapping: 0.088200 ms MarkObjects: 1.489400 ms  DeleteObjects: 0.109900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/personnage/Carry Grant profil bis.png
-  artifactKey: Guid(843df7c0cbf8ed3499ceeff538aeb464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/Carry Grant profil bis.png using Guid(843df7c0cbf8ed3499ceeff538aeb464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10a91e8cbbe2a8a45bf289a79c30274f') in 0.008092 seconds
-  Import took 0.010521 seconds .
+  path: Assets/Oculus/VR/Textures/Logos/OculusLogoSplash.png
+  artifactKey: Guid(3caded05dba914447a5f85650f9f4ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Textures/Logos/OculusLogoSplash.png using Guid(3caded05dba914447a5f85650f9f4ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9f3fe4d5ac77d9d090afc9512abb70') in 0.069514 seconds
+  Import took 0.071960 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/personnage/Yves Montand 1 port.png
-  artifactKey: Guid(828f863c0bbe8064d9655878c1ab82ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/Yves Montand 1 port.png using Guid(828f863c0bbe8064d9655878c1ab82ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46fd1a4131349841fdc52547c81299c0') in 0.007104 seconds
-  Import took 0.009950 seconds .
+  Time since last request: 0.000331 seconds.
+  path: Assets/Plugins/GitHub/Editor/big-logo@2x.png
+  artifactKey: Guid(f81094832d834c64d93b198cb16b6a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/GitHub/Editor/big-logo@2x.png using Guid(f81094832d834c64d93b198cb16b6a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe85260330f8e91e6ef3e40c7ca9e59') in 0.009173 seconds
+  Import took 0.011533 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.225148 seconds.
-  path: Assets/personnage/Yves Montand 1 port.png
-  artifactKey: Guid(828f863c0bbe8064d9655878c1ab82ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/Yves Montand 1 port.png using Guid(828f863c0bbe8064d9655878c1ab82ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46fd1a4131349841fdc52547c81299c0') in 0.007175 seconds
-  Import took 0.010150 seconds .
+  Time since last request: 0.000341 seconds.
+  path: Assets/Oculus/VR/Textures/Logos/OculusLogo.png
+  artifactKey: Guid(a56d69833b6471340bd0029e57449b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/Textures/Logos/OculusLogo.png using Guid(a56d69833b6471340bd0029e57449b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bca943eb110a3e1b69bb6ab74cdfa9a') in 0.018178 seconds
+  Import took 0.020604 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.236761 seconds.
-  path: Assets/personnage/Yves Montand 1 port.png
-  artifactKey: Guid(828f863c0bbe8064d9655878c1ab82ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/Yves Montand 1 port.png using Guid(828f863c0bbe8064d9655878c1ab82ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e4373284bbe95ef7c7c5ac4a402657') in 0.051679 seconds
-  Import took 0.054518 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.885629 seconds.
-  path: Assets/personnage/Carry Grant profil bis.png
-  artifactKey: Guid(843df7c0cbf8ed3499ceeff538aeb464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/Carry Grant profil bis.png using Guid(843df7c0cbf8ed3499ceeff538aeb464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3785e799baee9bead74d20f3cd005e63') in 0.023968 seconds
-  Import took 0.027747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/personnage/JP_LEAUD.png
-  artifactKey: Guid(21d9753b3f0b14d45a292c3ef68d2f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/personnage/JP_LEAUD.png using Guid(21d9753b3f0b14d45a292c3ef68d2f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c3e4d7ce9ffdafef5753c218c6688b') in 0.039101 seconds
-  Import took 0.042082 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 303.301628 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/6b6963b29938.jpg
-  artifactKey: Guid(255ec5707af2c6f4691bd0b6999adaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/6b6963b29938.jpg using Guid(255ec5707af2c6f4691bd0b6999adaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68afe2eae8f174ce7d22fe2a4142c43b') in 0.110426 seconds
-  Import took 0.113375 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/749358a3d69d.jpg
-  artifactKey: Guid(8722edc8ae6b1104595cfb75d1c4b4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/749358a3d69d.jpg using Guid(8722edc8ae6b1104595cfb75d1c4b4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03dae3b91388c2acaf47c12b726ce4a9') in 0.092529 seconds
-  Import took 0.094886 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/images/projecteur4_det.png
-  artifactKey: Guid(d6ee11a5258f4cc4f980dc57ba568776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/images/projecteur4_det.png using Guid(d6ee11a5258f4cc4f980dc57ba568776) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4243576d8ff4ff88354bb2a3a5fe8314') in 0.048500 seconds
-  Import took 0.050962 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_over.png
-  artifactKey: Guid(d573cef9968bac840a82613c16823a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_over.png using Guid(d573cef9968bac840a82613c16823a0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6471e56d0f7982d267646dbad9eb4a') in 0.018765 seconds
-  Import took 0.021349 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/AFFICHES/AFF_BRUTE FORCE.jpg
-  artifactKey: Guid(f493a87b905e5134faf0058ce0edbecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_BRUTE FORCE.jpg using Guid(f493a87b905e5134faf0058ce0edbecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd566f21b21fce709d154e0d1cff7e666') in 0.017944 seconds
-  Import took 0.020544 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/d2e611dca1c6.jpg
-  artifactKey: Guid(abb74846a488fa34c887191fedae2088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/d2e611dca1c6.jpg using Guid(abb74846a488fa34c887191fedae2088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af5bd92b7b1fac5cf892aab7326f5537') in 0.272055 seconds
-  Import took 0.292440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/separator.png
-  artifactKey: Guid(99e2846e72f06dc4fb23e772dca82743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/separator.png using Guid(99e2846e72f06dc4fb23e772dca82743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcc2cb6a2449a7e1f8ead7bb5b4fc17d') in 0.009367 seconds
-  Import took 0.011778 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/AFFICHES/AFF_PIEKNO i BOL.jpg
-  artifactKey: Guid(3653a0e12e0fb1e4eb7e3d094378a4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_PIEKNO i BOL.jpg using Guid(3653a0e12e0fb1e4eb7e3d094378a4d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b5d7e0058db225ef51e3831a2ed367') in 0.050949 seconds
-  Import took 0.053573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/AFFICHES/AFF_LE DESERT ROUGE.jpg
-  artifactKey: Guid(505a03f599cd90e45b5b91066473353d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_LE DESERT ROUGE.jpg using Guid(505a03f599cd90e45b5b91066473353d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b90cb693f2d270f25b7016f0c6a7939') in 0.149466 seconds
-  Import took 0.152173 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_bar.png
-  artifactKey: Guid(71df6d228f4ab4245b9791d80663baa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_bar.png using Guid(71df6d228f4ab4245b9791d80663baa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d652da980dad7392de6c45b45c653b2') in 0.061413 seconds
-  Import took 0.063761 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000253 seconds.
-  path: Assets/AFFICHES/AFF_LES ENCHAINES.jpg
-  artifactKey: Guid(91ad4cece9b8e9c47824a4ae2bd2fc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_LES ENCHAINES.jpg using Guid(91ad4cece9b8e9c47824a4ae2bd2fc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03cd1a564b4727f5c89bd0bfd461768e') in 0.095918 seconds
-  Import took 0.098216 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/AFFICHES/AFF_Cléo de 5 à 7.png
-  artifactKey: Guid(3897b67124a2cf5499a40c84d691cb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_Cléo de 5 à 7.png using Guid(3897b67124a2cf5499a40c84d691cb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaa917f24597d9a8e4bad10fb748be51') in 0.089076 seconds
-  Import took 0.091730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/AFFICHES/AFF_les jeux st faits_Sartre.png
-  artifactKey: Guid(80ca895f7f998be45a9139e32b26fd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_les jeux st faits_Sartre.png using Guid(80ca895f7f998be45a9139e32b26fd4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f488b5c83acc168752a494cbae211f5a') in 0.063565 seconds
-  Import took 0.065996 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/images/projecteur2_det.png
-  artifactKey: Guid(3f5ac8996992e1d419f0a2423cc11516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/images/projecteur2_det.png using Guid(3f5ac8996992e1d419f0a2423cc11516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a9714c2d9da2546670b9fcc363b373') in 0.080650 seconds
-  Import took 0.083652 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_on_off.png
-  artifactKey: Guid(f6e6acbe07068e448ada3d7aaeb72562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_on_off.png using Guid(f6e6acbe07068e448ada3d7aaeb72562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4acd2dc5a3288d45401ff058fa361821') in 0.022111 seconds
-  Import took 0.024680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/AFFICHES/AFF_Il jolly è impazzito.jpg
-  artifactKey: Guid(cc3d265f075221d4d94abf50eeaf3ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_Il jolly è impazzito.jpg using Guid(cc3d265f075221d4d94abf50eeaf3ee0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcd5ce367a06b609c18870f0a3e0c163') in 0.053154 seconds
-  Import took 0.055625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/AFFICHES/AFF_INTHE MOOD FOR LOVE.jpg
-  artifactKey: Guid(ef1b03160608bcb4aa8dc92da63a6493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_INTHE MOOD FOR LOVE.jpg using Guid(ef1b03160608bcb4aa8dc92da63a6493) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a87d512081c53ee8880a5916c71b5de') in 0.035247 seconds
-  Import took 0.037937 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000293 seconds.
-  path: Assets/AFFICHES/AFF_Stagecoach.jpg
-  artifactKey: Guid(7b5f9d161a03d5344ba6981836c05882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_Stagecoach.jpg using Guid(7b5f9d161a03d5344ba6981836c05882) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0ea1c1717e742367e12b7a9975e9c3f') in 0.041964 seconds
-  Import took 0.044484 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/panel_background.PNG
-  artifactKey: Guid(d929e2a65a1cbc54dacdbdcdb33165e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/panel_background.PNG using Guid(d929e2a65a1cbc54dacdbdcdb33165e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dee701c16303ce93bb7d0e0e9b72265') in 0.024190 seconds
-  Import took 0.026773 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/10eb4f3be7b1.jpg
-  artifactKey: Guid(db684dfe14369584ab2cbb516ab6f99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/10eb4f3be7b1.jpg using Guid(db684dfe14369584ab2cbb516ab6f99e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a09a08430d9dc0b462cc9f4add6e5d') in 0.046213 seconds
-  Import took 0.048786 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/header.png
-  artifactKey: Guid(eee045d55647138479b30e687b81c7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/header.png using Guid(eee045d55647138479b30e687b81c7e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53381460cef10a5ca5c84b9fb5f8efb7') in 0.012022 seconds
-  Import took 0.014504 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/button9slice.png
-  artifactKey: Guid(eec623c29607b1447ac4dc6de3cdda6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/button9slice.png using Guid(eec623c29607b1447ac4dc6de3cdda6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa332a34689854574ba53ee8e958bc8d') in 0.007487 seconds
-  Import took 0.009976 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_disabled.png
-  artifactKey: Guid(bdbd8a3ecf4a241499b36f4c13ded10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_disabled.png using Guid(bdbd8a3ecf4a241499b36f4c13ded10b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dd6a1a960020f93e95980983de4d6dc') in 0.022448 seconds
-  Import took 0.024952 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/AFFICHES/AFF_La nuit de la dernière chance_Rio_1958-01.png
-  artifactKey: Guid(fc22daa1c03b4444aa6e981ed68e7c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_La nuit de la dernière chance_Rio_1958-01.png using Guid(fc22daa1c03b4444aa6e981ed68e7c9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2ab6a95082032e337e16abc8dc287b') in 0.020207 seconds
-  Import took 0.022650 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Oculus/VR/Textures/windowgui.png
-  artifactKey: Guid(a26663690a6580440963aa46e582c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Textures/windowgui.png using Guid(a26663690a6580440963aa46e582c35b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd416c95ff1b484615c914ced372e78dc') in 0.013108 seconds
-  Import took 0.015617 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/scratchmap.png
-  artifactKey: Guid(44ebd7a6ebf81654c96c59809a328db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/scratchmap.png using Guid(44ebd7a6ebf81654c96c59809a328db2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f3a9d7f36bdc0c712dbe07d856e94f') in 0.080108 seconds
-  Import took 0.082541 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/AFFICHES/AFF_VULCANO.jpg
-  artifactKey: Guid(d16bd457ec52dfe43a9f120525d598f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_VULCANO.jpg using Guid(d16bd457ec52dfe43a9f120525d598f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091e0571f90a182a101a1a830af2e3a1') in 1.185582 seconds
-  Import took 1.188017 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/translucent_01.png
-  artifactKey: Guid(7ebd72557d873024e8afa355e92d435f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/translucent_01.png using Guid(7ebd72557d873024e8afa355e92d435f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbaaf83f7559c70e01780627a2493074') in 0.009251 seconds
-  Import took 0.012040 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/AFFICHES/AFF_Le renégat_Rio_1959-12.png
-  artifactKey: Guid(31db5e8e854f37d4a98ed8d12745315b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_Le renégat_Rio_1959-12.png using Guid(31db5e8e854f37d4a98ed8d12745315b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46b8eca651c0a6cf9ba94adfdffaa078') in 0.058219 seconds
-  Import took 0.060762 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_on.png
-  artifactKey: Guid(5aeca7df47eecc94bb7fbb5d79cf2036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_on.png using Guid(5aeca7df47eecc94bb7fbb5d79cf2036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f84d8fb610a389e443a97e1eabe710e') in 0.019952 seconds
-  Import took 0.030628 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000257 seconds.
-  path: Assets/AFFICHES/AFF_ROMA.jpg
-  artifactKey: Guid(a837c832a9c5d7a489dd097ec013a452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_ROMA.jpg using Guid(a837c832a9c5d7a489dd097ec013a452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4afcf21ea68b6449d2722708bffa96c') in 0.054075 seconds
-  Import took 0.056439 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/daf324659d71.jpg
-  artifactKey: Guid(272332eedafd06d4a89c8d679cffaaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/daf324659d71.jpg using Guid(272332eedafd06d4a89c8d679cffaaf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e79928aa448f649c89582f71b2ea1f6') in 0.103320 seconds
-  Import took 0.105797 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/AFFICHES/AFF_Les racines du ciel_Rio_1959-05.png
-  artifactKey: Guid(464e9e15fdbe7674688c9bf2807d8da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_Les racines du ciel_Rio_1959-05.png using Guid(464e9e15fdbe7674688c9bf2807d8da9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9011ee97bb131f3f82b54ae7aec55df8') in 0.190863 seconds
-  Import took 0.193371 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_slider.png
-  artifactKey: Guid(871600bbe5c92eb45a948fe73ff8b1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/slider_slider.png using Guid(871600bbe5c92eb45a948fe73ff8b1a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a9a6e69b0202939e08cead4d96f4529') in 0.019595 seconds
-  Import took 0.022131 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/AFFICHES/AFF_ZABRISKIE POINT.jpg
-  artifactKey: Guid(15ce8c86c0a438f42adc5949f179fdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_ZABRISKIE POINT.jpg using Guid(15ce8c86c0a438f42adc5949f179fdee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159da5bd041fb5ae6d3367450652a4b5') in 0.036333 seconds
-  Import took 0.038862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/AFFICHES/AFF_CRIA CUERVOS.jpg
-  artifactKey: Guid(886e19842ff1632499e2573402c1e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_CRIA CUERVOS.jpg using Guid(886e19842ff1632499e2573402c1e8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3626082776845ec99d7a4314b13dcdcd') in 0.037094 seconds
-  Import took 0.039476 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000260 seconds.
-  path: Assets/3D_objects/Camera_Classic/Textures/c3b2fdf4355b.jpg
-  artifactKey: Guid(9b692be1dbbed0d4dbde06bef9f996b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/3D_objects/Camera_Classic/Textures/c3b2fdf4355b.jpg using Guid(9b692be1dbbed0d4dbde06bef9f996b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffcdee1a613278d62e81038be5ab5ba') in 0.158834 seconds
-  Import took 0.247675 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_off.png
-  artifactKey: Guid(9a7a1aee5662d8e439db9465d2c3e3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/radio_off.png using Guid(9a7a1aee5662d8e439db9465d2c3e3fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a05b4d44ed3bb477901c8b32b0105b2') in 0.020824 seconds
-  Import took 0.023193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000272 seconds.
-  path: Assets/AFFICHES/AFF_M le Maudie.jpg
-  artifactKey: Guid(0e335007289e0d743b1fc8f0702b94ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_M le Maudie.jpg using Guid(0e335007289e0d743b1fc8f0702b94ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91251540d842c282ac03f523448f9b53') in 0.048199 seconds
-  Import took 0.050755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/button.png
-  artifactKey: Guid(749615b78f067c442b8275980b7ed7c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/button.png using Guid(749615b78f067c442b8275980b7ed7c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67a67631f78e21380452cabc736656ee') in 0.025663 seconds
-  Import took 0.028492 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/AFFICHES/AFF_Rio Bravo_Rio_1970-11.png
-  artifactKey: Guid(8408e4624dd87b1408bb38b4bb7fffcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_Rio Bravo_Rio_1970-11.png using Guid(8408e4624dd87b1408bb38b4bb7fffcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7be1a03ed9ff72f89eb082b0fe36f8b') in 0.111266 seconds
-  Import took 0.113727 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000261 seconds.
-  path: Assets/AFFICHES/AFF_SOLARIS.jpg
-  artifactKey: Guid(fd600d1daf83bac4690e6fdae3d105d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AFFICHES/AFF_SOLARIS.jpg using Guid(fd600d1daf83bac4690e6fdae3d105d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28fbb4387293f610c8f1c759e4623e9') in 0.032100 seconds
-  Import took 0.034580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000303 seconds.
+  Time since last request: 0.000313 seconds.
   path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png
   artifactKey: Guid(fd7cf88ee9b05f94f84bd7686a9669a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png using Guid(fd7cf88ee9b05f94f84bd7686a9669a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef20c9d4b30553bc2d1a2531e7a8973') in 0.011790 seconds
-  Import took 0.014852 seconds .
+Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png using Guid(fd7cf88ee9b05f94f84bd7686a9669a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148636057172b309fabffff6f0a908da') in 0.043793 seconds
+  Import took 0.047941 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Oculus/VR/Textures/handle.png
-  artifactKey: Guid(ce8f78b2b9292484e97f36ad9568fc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Textures/handle.png using Guid(ce8f78b2b9292484e97f36ad9568fc4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dff0a2486e3386e4041551b95b9c085') in 0.026146 seconds
-  Import took 0.028803 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007660 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Invoked RoslynAnalysisRunner static constructor.
-RoslynAnalysisRunner will not be running.
-RoslynAnalysisRunner has terminated.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.970 seconds
-Platform modules already initialized, skipping
-Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524288) extendedPlatform(0)
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
-Unloading 1760 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.2 MB.
-System memory in use after: 85.7 MB.
-
-Unloading 53 unused Assets to reduce memory usage. Loaded Objects now: 2310.
-Total: 3.789800 ms (FindLiveObjects: 0.330000 ms CreateObjectMapping: 0.056300 ms MarkObjects: 2.983200 ms  DeleteObjects: 0.418500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
