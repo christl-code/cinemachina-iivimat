@@ -36,6 +36,7 @@ namespace iivimat
                 while (true)
                 {
                     reaction.OnEventRaised(target);
+                    reaction.SetFinished(true);
                     yield return new WaitForSeconds(action.timeBetweenTriggers);
                 }
             }
@@ -44,6 +45,7 @@ namespace iivimat
                 for (int i = 0; i < action.nbTriggers; i++)
                 {
                     reaction.OnEventRaised(target);
+                    reaction.SetFinished(true);
                     yield return new WaitForSeconds(action.timeBetweenTriggers);
                 }
             }

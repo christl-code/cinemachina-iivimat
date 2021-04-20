@@ -21,7 +21,6 @@ namespace iivimat
                     rend.material.color = randomColor
                             ? new Color(Random.Range(0, 10) * 25 / 255f, Random.Range(0, 10) * 25 / 255f, Random.Range(0, 10) * 25 / 255f)
                             : color;
-                    setFinished(true);
                 }
             }
         }

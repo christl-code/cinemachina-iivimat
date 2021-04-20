@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [Serializable]
     public class NodeModelAction : NodeModelBase
     {
@@ -21,18 +24,25 @@ namespace iivimat
 
         public string actionID;
 
+        /// <summary>
+        /// Initialises an action and saves it 
+        /// </summary>
+        /// <param name="actionType"></param>
         public void SetupAction(string actionType)
         {
             // Create the action asset.
             action = ScriptableObject.CreateInstance(actionType) as Action;
             action.name = action.assetName;
-            action.Title = "" + action.GetType() + action.GetInstanceID();
             actionID = action.Guid;
 
             //Save it to the scene.
             InteractionsUtility.GetInteractionsSaver().AddAction(action);
         }
 
+        /// <summary>
+        /// On Destruction, actions are removed from local actions
+        /// and their reactions,which were linkedwith, are unregistered 
+        /// </summary>
         private void OnDestroy()
         {
             if (action != null)

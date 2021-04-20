@@ -21,7 +21,6 @@ namespace iivimat
                     if(shader != null){
                         rend.material.shader = shader;
                         Debug.Log("Shader added");
-                        setFinished(true);
                     }
                     else{
                         Debug.Log("Shader is null");

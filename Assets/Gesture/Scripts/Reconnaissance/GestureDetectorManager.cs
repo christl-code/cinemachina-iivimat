@@ -34,21 +34,22 @@ namespace iivimat
         private Gesture defaultGesture;
 
         // Threshold to recognize a gesture for the distance of the fingers
-        public float thresholdDistance = 0.05f;
+        private const float thresholdDistance = 0.05f;
         #endregion
 
         #region TELEPORTATION POINT OUT VARIABLES
         private GameObject mainCamera;
-        private List<Vector3> points = new List<Vector3>();
-        public float nbPoints = 100.0f;
-        public float initSpeed = 10.0f; // 
+        public List<Vector3> points = new List<Vector3>();
+        private const int nbPoints = 100;
+        private const float initSpeed = 5.0f;
         private float g = -10f;
         public GameObject currentPointedOutGOTeleportation = null;
 
-        public Vector3 hitPoint = Vector3.zero;
+        private Vector3 hitPoint = Vector3.zero;
         private bool actionDone = false;
         int Hand_Index1 = (int)OVRSkeleton.BoneId.Hand_Index1;
         private GameObject positionningGO = null;
+        LineRenderer line = null;
         #endregion
 
         #region INITIALISATION OF VARIABLES (START FUNCTION)
@@ -74,8 +75,15 @@ namespace iivimat
                 (GameObject)Resources.Load("Prefabs/Telepad/Model/Telepad"),
                 Vector3.zero, Quaternion.identity);
             positionningGO.transform.localScale = Vector3.one * 20.0f;
-            positionningGO.transform.Rotate(new Vector3(90, 0, 0), Space.Self);
+            positionningGO.transform.Rotate(new Vector3(-90, 0, 0), Space.Self);
             positionningGO.GetComponent<MeshRenderer>().enabled = false;
+            positionningGO.GetComponent<Renderer>().material = (Material)Resources.Load("IIVIMATAssets/transparentB");
+            if (GetComponent<LineRenderer>() != null)
+            {
+                line = GetComponent<LineRenderer>();
+                line.positionCount = nbPoints;
+                line.SetPositions(new Vector3[nbPoints]);
+            }
             StartCoroutine(RightHandRecognition());
             StartCoroutine(LeftHandRecognition());
         }
@@ -96,7 +104,14 @@ namespace iivimat
                     nameCurrentGestureRight = currentGestureRight[0].name;
                     PointOutRecognitionRight(skeletonRight, currentGestureRight);
                     handEvent.compareRightHandGesture(currentGestureRight[0]);
-                    PointOutRecognitionTeleportation(skeletonRight, currentGestureRight, handEvent);
+                    foreach (Action action in InteractionsUtility.GetInteractionsSaver().actions)
+                    {
+                        if (action is HandTeleport)
+                        {
+                            PointOutRecognitionTeleportation(skeletonRight, currentGestureRight, handEvent);
+                            break;
+                        }
+                    }
                 }
             }
         }
@@ -150,12 +165,18 @@ namespace iivimat
         #endregion
 
         #region POINTING OUT TELEPORTATION
+        /// <summary>
+        /// Allows the spectator to teleport to a point he or she pointed out
+        /// </summary>
+        /// <param name="skeleton"></param>
+        /// <param name="currentGesture"></param>
+        /// <param name="handEvent"></param>
         public void PointOutRecognitionTeleportation(OVRSkeleton skeleton, Gesture[] currentGesture, HandEvent handEvent)
         {
             var trackedBone = skeleton.Bones[Hand_Index1];
             if (currentGesture[0].name.Contains("Teleportation"))
             {
-                for (float i = 0; i < nbPoints; i += 1.0f)
+                for (int i = 0; i < nbPoints; i += 1)
                 {
                     float x = trackedBone.Transform.position.x + (trackedBone.Transform.right.x) * i,
                     z = trackedBone.Transform.position.z + (trackedBone.Transform.right.z) * i;
@@ -189,6 +210,7 @@ namespace iivimat
                         hitPoint = hit.point;
                         break;
                     }
+
                 }
                 if (currentPointedOutGOTeleportation == null)
                 {
@@ -200,6 +222,10 @@ namespace iivimat
                     }
                 }
                 positionningGO.transform.position = hitPoint;
+                if (line != null)
+                {
+                    line.SetPositions(points.ToArray());
+                }
             }
 
             if (!currentGesture[0].name.Contains("Teleportation") && actionDone)
@@ -212,6 +238,10 @@ namespace iivimat
                 currentPointedOutGOTeleportation = null;
                 hitPoint = Vector3.zero;
                 positionningGO.GetComponent<MeshRenderer>().enabled = false;
+                if (line != null)
+                {
+                    line.SetPositions(new Vector3[nbPoints]);
+                }
             }
 
 

@@ -15,6 +15,10 @@ namespace iivimat
         public Gesture currentDetectedGestureL = new Gesture();
         public Gesture currentDetectedGestureR = new Gesture();
         public GameObject pointedOutGOLeft = null, pointedOutGORight = null;
+        /// <summary>
+        /// Changes the current  left hand gesture
+        /// </summary>
+        /// <param name="newGestureL"></param>
         public void ChangeLeftGesture(Gesture newGestureL)
         {
             // Stops
@@ -37,6 +41,11 @@ namespace iivimat
             currentDetectedGestureL = newGestureL;
         }
 
+        /// <summary>
+        /// Changes the current right gesture
+        /// </summary>
+        /// <param name="newGestureR"></param>
+
         public void ChangeRightGesture(Gesture newGestureR)
         {
             // Stops
@@ -57,6 +66,10 @@ namespace iivimat
             currentDetectedGestureR = newGestureR;
         }
 
+        /// <summary>
+        /// Changes the current pointed out gameobject with the right hand
+        /// </summary>
+        /// <param name="current"></param>
         public void ChangePointedGameObjectRight(GameObject current)
         {
             // Stops
@@ -76,6 +89,10 @@ namespace iivimat
 
         }
 
+        /// <summary>
+        /// Changes the current pointed out gameobject with the right hand
+        /// </summary>
+        /// <param name="current"></param>
         public void ChangePointedGameObjectLeft(GameObject current)
         {
             // Stops
@@ -95,16 +112,28 @@ namespace iivimat
 
         }
 
-        public void Teleport(Vector3 hitPoint, GameObject current){
-            if(current != null){
+        /// <summary>
+        /// Teleports the maincamera to the hitpoint
+        /// </summary>
+        /// <param name="hitPoint"></param>
+        /// <param name="current"></param>
+        public void Teleport(Vector3 hitPoint, GameObject current)
+        {
+            if (current != null)
+            {
                 handTeleportElements = current.GetComponent<LocalActions>().Actions.OfType<HandTeleport>().ToList();
-                if(handTeleportElements.Any()){
-                    GameObject.FindGameObjectWithTag("Body").transform.position += 
+                if (handTeleportElements.Any())
+                {
+                    GameObject.FindGameObjectWithTag("Body").transform.position +=
                     ((hitPoint - GameObject.FindGameObjectWithTag("Body").transform.position));
                 }
             }
         }
 
+        /// <summary>
+        /// Compares the current pointed out gameobject with the left hand with the previous one
+        /// </summary>
+        /// <param name="current"></param>
         public void comparePointedOutGOLeft(GameObject current)
         {
             if (this.pointedOutGOLeft != current)
@@ -112,6 +141,10 @@ namespace iivimat
                 this.ChangePointedGameObjectLeft(current);
             }
         }
+        /// <summary>
+        /// Compares the current pointed out gameobject with the right hand with the previous one
+        /// </summary>
+        /// <param name="current"></param>
         public void comparePointedOutGORight(GameObject current)
         {
             if (this.pointedOutGORight != current)
@@ -119,6 +152,11 @@ namespace iivimat
                 this.ChangePointedGameObjectRight(current);
             }
         }
+
+        /// <summary>
+        /// Compares the current left hand gesture with the previous one
+        /// </summary>
+        /// <param name="current"></param>
         public void compareLeftHandGesture(Gesture currentGestureL)
         {
             if (currentDetectedGestureL.name != currentGestureL.name)
@@ -126,7 +164,10 @@ namespace iivimat
                 ChangeLeftGesture(currentGestureL);
             }
         }
-
+        /// <summary>
+        /// Compares the current right hand gesture with the previous one
+        /// </summary>
+        /// <param name="current"></param>
         public void compareRightHandGesture(Gesture currentGestureR)
         {
             if (currentDetectedGestureR.name != currentGestureR.name)

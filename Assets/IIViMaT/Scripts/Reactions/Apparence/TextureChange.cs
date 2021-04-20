@@ -21,7 +21,6 @@ namespace iivimat
                     if(texture != null){
                         rend.material.mainTexture = texture;
                         Debug.Log("Texture added");
-                        setFinished(true);
                     }
                     else{
                         Debug.Log("Texture is null");

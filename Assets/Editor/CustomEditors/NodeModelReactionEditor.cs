@@ -3,6 +3,9 @@ using UnityEngine;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor(typeof(NodeModelReaction))]
     public class NodeModelReactionEditor : Editor

@@ -36,7 +36,6 @@ namespace iivimat
                         default:
                             break; //throw new ArgumentOutOfRangeException();
                     }
-                    setFinished(true);
                 }
             }
         }

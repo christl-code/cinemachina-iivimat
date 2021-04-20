@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using System.Runtime.InteropServices;
 
 
-/// Structure to represent a Gesture
+/// <summary>
+/// Gesture structure
+/// </summary>
 namespace iivimat
 {
 [System.Serializable]

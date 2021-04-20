@@ -9,6 +9,9 @@ using UnityEngine.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NodeViewObject : Node
     {
         Color backgroundColor = Color.green;

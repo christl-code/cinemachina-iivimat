@@ -3,24 +3,24 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 namespace iivimat
 {
     [InitializeOnLoad]
     public class ProjectView
     {
         /// <summary>
-        /// Add a menu item to create a new IIVimat scene
+        /// Adds a menu item to create a new IIVimat scene (Project)
         /// </summary>
         [MenuItem("Assets/Create/Scene IIViMaT", false, 201)]
         static void CreateScene()
         {
-            // Duplicate our template scene
+            // Duplicates our template scene
             string dstScenePath = AssetDatabase.GenerateUniqueAssetPath(AssetDatabase.GetAssetPath(Selection.activeObject) + "/New " + GraphViewWindow.pluginName + " Scene.unity");
 
             if (AssetDatabase.CopyAsset("Assets/" + GraphViewWindow.pluginName + "/Scenes/Templates/Template Scene.unity", dstScenePath))
             {
                 Scene scene = EditorSceneManager.OpenScene(dstScenePath);
-                // Don't forget to change the unique scene ID
                 GameObject.FindWithTag("Meta").GetComponent<UniqueID>().GenerateNewGUID();
                 EditorSceneManager.SaveScene(scene);
                 SceneManager.SetActiveScene(scene);
@@ -32,18 +32,17 @@ namespace iivimat
         }
 
         /// <summary>
-        /// Add a menu item to create a new IIVimat Oculus scene
+        /// Adds a menu item to create a new IIVimat Oculus scene (Project)
         /// </summary>
         [MenuItem("Assets/Create/Scene Oculus IIViMaT", false, 201)]
         static void CreateSceneOculus()
         {
-            // Duplicate our template scene
+            // Duplicates our template scene
             string dstScenePath = AssetDatabase.GenerateUniqueAssetPath(AssetDatabase.GetAssetPath(Selection.activeObject) + "/New " + GraphViewWindow.pluginName + " Oculus Scene.unity");
 
             if (AssetDatabase.CopyAsset("Assets/" + GraphViewWindow.pluginName + "/Scenes/Templates/Template Oculus Scene.unity", dstScenePath))
             {
                 Scene scene = EditorSceneManager.OpenScene(dstScenePath);
-                // Don't forget to change the unique scene ID
                 GameObject.FindWithTag("Meta").GetComponent<UniqueID>().GenerateNewGUID();
                 EditorSceneManager.SaveScene(scene);
                 SceneManager.SetActiveScene(scene);
@@ -55,7 +54,7 @@ namespace iivimat
         }
 
         /// <summary>
-        /// Add a menu item to create a new sphere 360
+        /// Add a menu item to create a new sphere 360 (Hierarchy)
         /// </summary>
         [MenuItem("GameObject/Video/Sphere 360", false, 10)]        
         static void CreateSphere360Prefab()

@@ -7,16 +7,21 @@ using System.Linq;
 
 namespace iivimat
 {
-    /**
-     * HierarchyView checks project to create tags
-     * and apply 3 scripts on every GameObjects child of Environment
-     * (to make them interactable)
-     */
+    /// <summary>
+    /// HierarchyView checks project to create tags
+    /// and apply 3 scripts on every GameObjects child of Environment
+    /// (to make them interactable)
+    /// </summary>
     [InitializeOnLoad]
     public static class HierarchyView
     {
         private static GameObject environment;
 
+        /// <summary>
+        /// Hierarchy Constructor
+        /// Launches method at the opening of a scene
+        /// and at hierarchy change
+        /// </summary>
         static HierarchyView()
         {
             CheckTags();
@@ -26,6 +31,10 @@ namespace iivimat
         }
 
         // @source http://answers.unity.com/answers/917823/view.html
+        /// <summary>
+        /// Checks if meta, feedback and environment tags exist in tags List
+        /// otherwise it creates and add them to the list
+        /// </summary>
         static void CheckTags()
         {
             // Open tag manager
@@ -89,13 +98,22 @@ namespace iivimat
             tagManager.ApplyModifiedProperties();
         }
 
+        /// <summary>
+        /// Initialises environment and calls OnHierarchyChanged 
+        /// at the opening of the scene
+        /// </summary>
+        /// <param name="scene"></param>
+        /// <param name="mode"></param>
         static void OnSceneOpened(Scene scene, OpenSceneMode mode)
-        { 
+        {
             environment = GameObject.FindWithTag("Environment");
-            OnHierarchyChanged();
+            //OnHierarchyChanged();
         }
 
         // Delegate called when hierarchy is changed, to add our essential components to environment children
+        /// <summary>
+        /// Update environment children's components when hierarchy is changed
+        /// </summary>
         static void OnHierarchyChanged()
         {
             if (environment == null)
@@ -103,10 +121,10 @@ namespace iivimat
 
             // Naive way ?
             List<Transform> children = environment.GetComponentsInChildren<Transform>().Except(new[] { environment.transform }).ToList();
-            
+
             //Actual GUID of objects in new scene
             List<string> newGuids = new List<string>();
-            
+
             foreach (Transform child in children)
             {
                 GameObject go = child.gameObject;
@@ -123,7 +141,7 @@ namespace iivimat
             }
 
             List<string> missingGuids = InteractionsUtility.GetInteractionsSaver().actualGUIDS.Except(newGuids).ToList();
-            
+
             InteractionsUtility.GetInteractionsSaver().RemoveGuid(missingGuids);
             InteractionsUtility.GetInteractionsSaver().actualGUIDS = newGuids;
         }

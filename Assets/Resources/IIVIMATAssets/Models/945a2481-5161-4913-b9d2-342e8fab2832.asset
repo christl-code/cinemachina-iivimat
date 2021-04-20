@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7144524786687947878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b3e8ad910d35948a96e8bed6ba69b1, type: 3}
+  m_Name: Node_838bfe06-abc8-4963-9e44-2b141f593543
+  m_EditorClassIdentifier: 
+  position: {x: 633.29236, y: 1347.191}
+  title: Ground
+  uniqueID: {fileID: 0}
+  objectID: 914e33a1-4ad3-49f8-a0e4-6b512b227ec7
+--- !u!114 &-5871633804813458915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29b7d4f3a9564f4408be75cd87b9b2e7, type: 3}
+  m_Name: Node_a11849f7-0470-4a80-8eed-becefb52160d
+  m_EditorClassIdentifier: 
+  position: {x: 770.1711, y: 1365.4415}
+  title: HandTeleport_10
+  action: {fileID: 0}
+  actionID: 5b7c04ba-4ee6-406a-87cf-0fc0d8f5dac5
+--- !u!114 &-1574002585188722656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4f0cdd09383e604f828934275a7a5e9, type: 3}
+  m_Name: Edge_834e323f-5457-49fe-bf4f-4ce36d20dbaf
+  m_EditorClassIdentifier: 
+  input: {fileID: -5871633804813458915}
+  output: {fileID: -7144524786687947878}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726f4b26852d33a48b8185317e3d723c, type: 3}
+  m_Name: 945a2481-5161-4913-b9d2-342e8fab2832
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -7144524786687947878}
+  - {fileID: -5871633804813458915}
+  edges:
+  - {fileID: -1574002585188722656}

@@ -48,7 +48,7 @@ namespace iivimat
 
             if (instanceID != GetInstanceID() && GetInstanceID() < 0)
             {
-                Debug.LogWarning("Detected Duplicate!");
+                //Debug.LogWarning("Detected Duplicate!");
                 instanceID = GetInstanceID();
                 GenerateNewGUID();
             }

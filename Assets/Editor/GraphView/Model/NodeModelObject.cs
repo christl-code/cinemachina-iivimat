@@ -22,9 +22,7 @@ namespace iivimat
                 if (go == null)
                 {
                     go = InteractionsUtility.FindGameObjectByGuid(objectID);
-                    if(go != null){
-                        uniqueID = go.GetComponent<UniqueID>();
-                    }
+                    uniqueID = go.GetComponent<UniqueID>();
                 }
                 return go;
             }
@@ -43,8 +41,8 @@ namespace iivimat
             uniqueID = go.GetComponent<UniqueID>();
             uniqueID.Renamed += OnRename;
             objectID = uniqueID.Guid;
-            EditorSceneManager.sceneLoaded += OnSceneLoaded;
-            EditorApplication.hierarchyChanged += OnHierarchyChanged;
+            //EditorSceneManager.sceneLoaded += OnSceneLoaded;
+            //EditorApplication.hierarchyChanged += OnHierarchyChanged;
         }
 
         private void OnRename()
@@ -68,9 +66,9 @@ namespace iivimat
 
         private void OnDestroy()
         {
-            //uniqueID.Renamed -= OnRename;
-            EditorSceneManager.sceneLoaded -= OnSceneLoaded;
-            EditorApplication.hierarchyChanged -= OnHierarchyChanged;
+            uniqueID.Renamed -= OnRename;
+            //EditorSceneManager.sceneLoaded -= OnSceneLoaded;
+            //EditorApplication.hierarchyChanged -= OnHierarchyChanged;
 
             if (Go != null)
             {

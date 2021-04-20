@@ -71,27 +71,31 @@ namespace iivimat
 
         public static GameObject FindGameObjectByGuid(string guid)
         {
-            GameObject environment = GameObject.FindWithTag("Environment");
-            if (environment != null)
-            {
-                List<Transform> children = environment.GetComponentsInChildren<Transform>().Except(new[] { environment.transform }).ToList();
-                foreach (Transform child in children)
+            if(InteractionsUtility.GetInteractionsSaver().actualGUIDS.Contains(guid)){
+                GameObject environment = GameObject.FindWithTag("Environment");
+                if (environment != null)
                 {
-                    GameObject go = child.gameObject;
+                    List<Transform> children = environment.GetComponentsInChildren<Transform>().Except(new[] { environment.transform }).ToList();
+                    foreach (Transform child in children)
+                    {
+                        GameObject go = child.gameObject;
 
-                    if (go.CompareTag("Feedback"))
-                        continue;
+                        if (go.CompareTag("Feedback"))
+                            continue;
 
-                    if (go.GetComponent<UniqueID>().Guid.Equals(guid))
-                        return go;
+                        if (go.GetComponent<UniqueID>().Guid.Equals(guid))
+                            return go;
+                    }
+                    return null;
                 }
-                return null;
+                else
+                {
+                    Debug.LogError("No Scene Environment Game Object found");
+                    return null;
+                }
             }
-            else
-            {
-                Debug.LogError("No Scene Environment Game Object found");
-                return null;
-            }
+            return null;
+            
         }
         public static Information FindInformationByGuid(string guid)
         {
@@ -122,7 +126,7 @@ namespace iivimat
             List<Reaction> reactions = InteractionsUtility.GetInteractionsSaver().reactions;
             foreach (Reaction reaction in reactions)
             {
-                if (reaction.GetGuid().Equals(guid))
+                if (reaction.Guid.Equals(guid))
                 {
                     return reaction;
                 }

@@ -21,18 +21,23 @@ namespace iivimat
 
         public string reactionID;
 
+        /// <summary>
+        /// Initialise reaction
+        /// </summary>
+        /// <param name="reactionType"></param>
         public void SetupReaction(string reactionType)
         {
             // Create the reaction asset.
             reaction = ScriptableObject.CreateInstance(reactionType) as Reaction;
             reaction.name = reaction.assetName;
-            reaction.SetTitle("" + reaction.GetType() + reaction.GetInstanceID());
-            reactionID = reaction.GetGuid();
-
+            reactionID = reaction.Guid;
             //Save it to the scene.
             InteractionsUtility.GetInteractionsSaver().AddReaction(reaction);
         }
 
+        /// <summary>
+        /// On Destruction the reaction is unregisterd from all actions linked to it
+        /// </summary>
         private void OnDestroy()
         {
             if (reaction != null)

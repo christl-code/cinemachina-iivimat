@@ -45,8 +45,6 @@ namespace iivimat
                         default:
                             break;
                     }
-                    setFinished(true);
-
                 }
             }
         }

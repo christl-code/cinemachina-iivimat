@@ -5,13 +5,16 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace iivimat{
+    /// <summary>
+    /// 
+    /// </summary>
     public class NodeViewInformation : Node
     {
         SerializedObject so;
         public Color backgroundColor = Color.grey;
         public NodeViewInformation(NodeModelInformation nodeModel){
             // SETUP
-            title = nodeModel.Information.GetType().Name;
+            title = nodeModel.Information.Title;
             capabilities |= Capabilities.Movable;
             viewDataKey = nodeModel.guid;
             name = nodeModel.guid;

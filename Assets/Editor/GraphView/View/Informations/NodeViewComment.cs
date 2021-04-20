@@ -4,6 +4,9 @@ using UnityEditor.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// Defines appearance of the node of "Comment"
+    /// </summary>
     public class NodeViewComment : NodeViewInformation
     {
         SerializedObject so;

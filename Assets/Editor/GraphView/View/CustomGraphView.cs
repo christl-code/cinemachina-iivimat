@@ -7,6 +7,9 @@ using UnityEngine.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class CustomGraphView : GraphView
     {
         public CustomGraphView(GraphModel graphModel)

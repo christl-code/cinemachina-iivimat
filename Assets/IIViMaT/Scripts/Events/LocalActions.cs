@@ -72,5 +72,12 @@ namespace iivimat
         public void Clear(){
             Actions.Clear();
         }
+
+        public void RemoveObjectInActions(GameObject go){
+            for (int i = 0; i < Actions.Count; i++)
+                {
+                    Actions[i].RemoveGameObject(go);
+                }
+        }
     }
 }

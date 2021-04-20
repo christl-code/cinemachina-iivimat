@@ -6,10 +6,14 @@ using UnityEngine.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NodeViewAction : Node
     {
 
-        Color backgroundColor = Color.blue;
+        public Color backgroundColor = Color.blue;
+        Color backgroundDisabledColor;
         SerializedObject so;
 
         protected SerializedProperty propDelay;
@@ -21,15 +25,14 @@ namespace iivimat
         public NodeViewAction(NodeModelAction nodeModel)
         {
             // SETUP
-            title = nodeModel.Action.GetType().Name;
+            title = nodeModel.Action.Title;
             capabilities |= Capabilities.Movable;
             viewDataKey = nodeModel.guid;
             name = nodeModel.guid;
             userData = nodeModel;
             SetPosition(new Rect(nodeModel.position, Vector2.zero));
-
-            mainContainer.style.backgroundColor = backgroundColor;
-
+            mainContainer.style.backgroundColor = backgroundDisabledColor;
+            backgroundDisabledColor =  backgroundColor / 3;
             // Ports
             var inputPort = Port.Create<Edge>(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(NodeModelObject));
             inputPort.portName = "Game Object(s)";
@@ -68,6 +71,19 @@ namespace iivimat
             PropertyField fieldState = new PropertyField(propState, "State");
             fieldState.Bind(so);
             visualElement.Add(fieldState);
+
+            fieldState.RegisterValueChangeCallback(evt =>
+            {
+                if(propState.enumValueIndex == 1){
+                    mainContainer.style.backgroundColor = backgroundDisabledColor;
+                    visualElement.style.backgroundColor = backgroundDisabledColor;
+
+                }else{
+                    mainContainer.style.backgroundColor = backgroundColor;
+                    visualElement.style.backgroundColor = backgroundColor;
+                }
+
+            });
 
             //Delay
             PropertyField fieldDelay = new PropertyField(propDelay, "Delay (sec)");
@@ -110,7 +126,6 @@ namespace iivimat
                     }
                 }
             });
-            visualElement.style.backgroundColor = backgroundColor;
 
             return visualElement;
         }

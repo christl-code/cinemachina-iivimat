@@ -3,6 +3,10 @@ using UnityEditor.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// Defines appearance of the node of "HandGestureRight"
+    /// Owns a specific list of possible gestures for right ahnd
+    /// </summary>
     public class NodeViewHandGestureRight : NodeViewAction
     {
         SerializedObject so;
