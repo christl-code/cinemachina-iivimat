@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b9f96e4fbf895f419605e96347976b6, type: 3}
   m_Name: Node_444c988b-2eff-48b4-8763-513c80d6b8a2
   m_EditorClassIdentifier: 
-  position: {x: -661, y: -1718}
+  position: {x: -630, y: -1825}
   title: iivimat.Teleportation-2198
   reaction: {fileID: 0}
   reactionID: 4aa0e8ef-6945-4db6-8b32-e55e460c5639
