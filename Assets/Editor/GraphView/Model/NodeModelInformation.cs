@@ -22,6 +22,10 @@ namespace iivimat{
 
         public string informationID;
 
+        /// <summary>
+        /// Initialises an information and saves it
+        /// </summary>
+        /// <param name="informationType"></param>
         public void SetupInformation(string informationType)
         {
             // Create the information asset.
@@ -34,13 +38,15 @@ namespace iivimat{
             InteractionsUtility.GetInteractionsSaver().AddInformation(information);
         }
 
+        /// <summary>
+        /// On Destruction information are removed from the scene model
+        /// </summary>
         private void OnDestroy()
         {
             if (information != null)
             {
                 Undo.RegisterCompleteObjectUndo(InteractionsUtility.GetInteractionsSaver(), "");
                 InteractionsUtility.GetInteractionsSaver().RemoveInformation(information);
-                // DestroyImmediate(action, true);
                 Undo.DestroyObjectImmediate(information);
             }
         }

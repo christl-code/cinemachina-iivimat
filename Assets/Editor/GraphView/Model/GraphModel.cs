@@ -45,7 +45,6 @@ namespace iivimat
             Undo.DestroyObjectImmediate(node);
 
             Undo.CollapseUndoOperations(group);
-            Clean();
         }
 
         public void Remove(EdgeModel edge)
@@ -64,16 +63,10 @@ namespace iivimat
             Undo.DestroyObjectImmediate(edge);
 
             Undo.CollapseUndoOperations(group);
-            Clean();
-
         }
 
         public void Clean()
         {
-
-            List<EdgeModel> edgesToRemove = new List<EdgeModel>();
-            List<NodeModelBase> nodesToRemove = new List<NodeModelBase>();
-
             // Clean lists from null
             for (int i = 0; i < nodes.Count; i++)
                 if (nodes[i] == null)
@@ -85,11 +78,8 @@ namespace iivimat
             // Fix for Unity's undo object in asset - Add all ghosts elements
             nodes.ForEach(node =>
             {
-                if (!AssetDatabase.Contains(node)){
-                    
+                if (!AssetDatabase.Contains(node))
                     AssetDatabase.AddObjectToAsset(node, this);
-                }
-                    
             });
             edges.ForEach(edge =>
             {
@@ -100,33 +90,22 @@ namespace iivimat
                 if (edge.output is NodeModelObject nodeModelObject)
                 {
                     NodeModelAction nodeModelAction = edge.input as NodeModelAction;
-                    if(nodeModelAction.Action != null && nodeModelObject.Go != null){
-                        if (!nodeModelObject.Go.GetComponent<LocalActions>().Actions.Contains(nodeModelAction.Action))
-                        {
-                            nodeModelAction.Action.AddGameObject(nodeModelObject.Go);
-                            Debug.Log("Link re-done");
-                        }
-                    }else{                            
-                        nodesToRemove.Add(nodeModelObject);
-                        edgesToRemove.Add(edge);
+                    if (!nodeModelObject.Go.GetComponent<LocalActions>().Actions.Contains(nodeModelAction.Action))
+                    {
+                        nodeModelAction.Action.AddGameObject(nodeModelObject.Go);
+                        Debug.Log("Link re-done");
                     }
                 }
                 else if (edge.input is NodeModelReaction nodeModelReaction)
                 {
                     NodeModelAction nodeModelAction = edge.output as NodeModelAction;
-                    //if(nodeModelAction.Action != null && nodeModelReaction.Reaction != null){
-                        if (!nodeModelReaction.Reaction.Events.Contains(nodeModelAction.Action))
-                        {
-                            nodeModelAction.Action.RegisterListener(nodeModelReaction.Reaction);
-                            Debug.Log("Link re-done");
-                        }
-                    //}
-
+                    if (!nodeModelReaction.Reaction.Events.Contains(nodeModelAction.Action))
+                    {
+                        nodeModelAction.Action.RegisterListener(nodeModelReaction.Reaction);
+                        Debug.Log("Link re-done");
+                    }
                 }
             });
-
-            edgesToRemove.ForEach(edge => Remove(edge));
-            nodesToRemove.ForEach(node => Remove(node));
 
         }
     }

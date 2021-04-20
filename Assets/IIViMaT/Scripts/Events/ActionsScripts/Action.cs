@@ -18,16 +18,20 @@ namespace iivimat
     [Serializable]
     public class Action : ScriptableObject
     {
+        public static int _instance = 0; 
+        [SerializeField]
+        public int instance;
+
         [SerializeField]
         private string guid;
         public string Guid { get { return guid; } private set { guid = value; } }
         [SerializeField]
         private string title;
-        public string Title { get { return title; } set { title = value; } }
+        public string Title { get { return "" + GetType().ToString().Substring(GetType().ToString().IndexOf(".")+1) + "_" + instance; } set { title = value; } }
         public string assetName { get { return "Action_" + guid; } private set { } }
 
+        [SerializeField]
         public float delay = 0.0f;
-
 
         [SerializeField]
         public State state = State.Enabled;
@@ -85,6 +89,7 @@ namespace iivimat
         public Action()
         {
             if (String.IsNullOrEmpty(Guid)) Guid = System.Guid.NewGuid().ToString();
+            instance = ++_instance;
         }
 
         private void OnEnable() => Clean();
@@ -215,6 +220,7 @@ namespace iivimat
                 ObjectIDs.Add(guid);
                 // Lien GameObject -> Action
                 go.GetComponent<LocalActions>().AddAction(this);
+                List<GameObject> lg = Objects;
                 OnAddGameObject(go);
             }
         }

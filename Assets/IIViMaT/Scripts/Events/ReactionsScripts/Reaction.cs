@@ -10,15 +10,17 @@ namespace iivimat
     [System.Serializable]
     public class Reaction : ScriptableObject
     {
+        public static int _instance = 0;
+        [SerializeField]
+        public int instance;
 
         [SerializeField]
         private string guid;
-        public string GetGuid() { return guid; }
+        public string Guid { get { return guid; } private set { guid = value; } }
 
         [SerializeField]
         private string title;
-        public string GetTitle() { return title; }
-        public void SetTitle(string title) { this.title = title; }
+        public string Title { get { return "" + GetType().ToString().Substring(GetType().ToString().IndexOf(".")+1) + "_" + instance; }}
         public string assetName { get { return "Reaction_" + guid; } private set { } }
         public string GetName() { return name; }
         public void SetName(string name) { this.name = name; }
@@ -45,6 +47,7 @@ namespace iivimat
         {
             if (string.IsNullOrEmpty(guid))
                 guid = System.Guid.NewGuid().ToString();
+            instance = ++_instance;
         }
 
         private void OnEnable() => Clean();
@@ -82,9 +85,10 @@ namespace iivimat
                     OnRaised();
                 }
             }
+            SetFinished(true);
         }
 
-        public void setFinished(bool value){
+        public void SetFinished(bool value){
             finished = value;
         } 
 

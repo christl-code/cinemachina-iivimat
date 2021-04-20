@@ -19,7 +19,6 @@ namespace iivimat
                     Vector3 offset = new Vector3(bodyPosition.x-headPosition.x, 0, bodyPosition.z-headPosition.z);
 
                     GameObject.FindGameObjectWithTag("Body").transform.position = transform.position + offset;
-                    setFinished(true);
                 }
             }
         }

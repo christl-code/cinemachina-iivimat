@@ -25,7 +25,6 @@ namespace iivimat
                 foreach (IReactionScript s in ss) {
                     s.ReactionToScript();
                 }
-                setFinished(true);
             }
         }
 

@@ -7,6 +7,9 @@ using UnityEngine.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NodeViewReactionString : Node
     {
         Color backgroundColor = Color.red;
@@ -21,7 +24,7 @@ namespace iivimat
         public NodeViewReactionString(NodeModelReaction nodeModel)
         {
             // SETUP
-            title = nodeModel.Reaction.GetType().Name;
+            title = nodeModel.Reaction.Title;
             capabilities |= Capabilities.Movable;
             viewDataKey = nodeModel.guid;
             name = nodeModel.guid;

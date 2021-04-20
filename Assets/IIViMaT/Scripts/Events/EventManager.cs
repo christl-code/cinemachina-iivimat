@@ -126,5 +126,11 @@ namespace iivimat
             spectatorVariables.SetInitialPosition(mainCamera.transform.position);
         }
 
+        /// <summary>
+        /// Clear
+        /// </summary>
+        public void Clear(){
+            video360Reaction = null;
+        }
     }
 }

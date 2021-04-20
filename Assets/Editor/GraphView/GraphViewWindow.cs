@@ -11,6 +11,9 @@ using UnityEngine.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class GraphViewWindow : EditorWindow, ISearchWindowProvider
     {
         public static readonly string pluginName = "IIViMaT";
@@ -310,7 +313,7 @@ namespace iivimat
                 // Setup it
                 nodeModel.name = nodeModel.assetName;
                 nodeModel.SetupReaction( nodeEntry.data.ToString() );
-                nodeModel.title = nodeModel.Reaction.GetTitle();
+                nodeModel.title = nodeModel.Reaction.Title;
                 nodeModel.position = graphMousePosition;
 
                 GraphModel.Add(nodeModel);
@@ -354,8 +357,6 @@ namespace iivimat
             {
                 if(nodeModelObject.Go != null){
                     nodeView = new NodeViewObject(nodeModelObject);
-                }else{
-                    DestroyImmediate(nodeModel,true);
                 }
             }
             else if (nodeModel is NodeModelAction nodeModelAction)
@@ -429,7 +430,7 @@ namespace iivimat
 
                     CustomGraphView.AddElement(edge);
                 }catch(NullReferenceException){
-
+                    
                 }
             }
             
@@ -450,7 +451,7 @@ namespace iivimat
             currentSceneGUID = meta.GetComponent<UniqueID>().Guid;
 
             // Clean everything
-            GraphModel.Clean();
+            //GraphModel.Clean();
             CustomGraphView.Clean();
 
             // And recreate them based on GraphModel lists
@@ -467,6 +468,9 @@ namespace iivimat
             // Clear all actions in the objects in meta
             InteractionsUtility.GetInteractionsSaver().Clear();
             InteractionsUtility.GetGlobalActions().Clear();
+            InteractionsUtility.GetEventManager().Clear();
+            InteractionsUtility.GetEventEndHandler().Clear();
+
 
             // Clear all local actions
             LocalActions[] components = Resources.FindObjectsOfTypeAll<LocalActions>();

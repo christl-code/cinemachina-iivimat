@@ -3,6 +3,9 @@ using UnityEditor.UIElements;
 
 namespace iivimat
 {
+    /// <summary>
+    /// Defines appearance of the node of the action "ProjectClock"
+    /// </summary>
     public class NodeViewProjectClock : NodeViewAction
     {
         SerializedObject so;

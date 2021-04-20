@@ -10,7 +10,8 @@ namespace iivimat
         public enum ActivationOptions
         {
             Enabled,
-            Disabled
+            Disabled,
+            Toggle
         }
 
         public ActivationOptions activation;
@@ -19,6 +20,9 @@ namespace iivimat
         {
             if(!playOnce || !finished){
                 switch(activation){
+                    case ActivationOptions.Toggle:
+                        target.SetActive(!target.activeSelf);
+                        break;
                     case ActivationOptions.Disabled:
                         target.SetActive(false);
                         break;
@@ -28,7 +32,6 @@ namespace iivimat
                     default:
                         break;
                 }
-                setFinished(true);
             }
         }
 

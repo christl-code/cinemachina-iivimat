@@ -155,6 +155,13 @@ namespace iivimat{
             }
         }
 
+        /// <summary>
+        /// Clear all videoPlayers and audioSources
+        /// </summary>
+        public void Clear(){
+            videoPlayers = null;
+            audioSources = null;
+        }
 
     }
 }
