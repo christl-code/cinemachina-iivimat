@@ -1,61 +1,61 @@
 Using pre-set license
-Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'fr' Physical Memory: 16215 MB
+Built from '2020.3/release' branch; Version is '2020.3.2f1 (8fd9074bf66c) revision 9427207'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19041.928; Version 2004; 64bit' Language: 'fr' Physical Memory: 16333 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2020.3.2f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject
+D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62507
-Successfully changed project path to: C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject
-C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject
+51282
+Successfully changed project path to: D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat
+D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 44.77 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 1.03 ms.
-Initialize engine version: 2020.3.1f1 (77a89f25062f)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Risotto Nero/Documents/Unity Projects/Lidl'sProject/Assets
+Refreshing native plugins compatible for Editor in 53.17 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 1.00 ms.
+Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/VR-IIvimat-Mavii/Cinemachina_Github/cinemachina-iivimat/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2191)
+    Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f02)
     Vendor:   
-    VRAM:     5991 MB
-    Driver:   27.21.14.6589
+    VRAM:     8031 MB
+    Driver:   27.21.14.5671
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56356
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002229 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002763 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 40.38 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
+Refreshing native plugins compatible for Editor in 39.81 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.001 seconds
+- Completed reload, in  2.205 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009047 seconds.
+Registered in 0.007442 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 0.67 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
@@ -65,49 +65,42 @@ RoslynAnalysisRunner has terminated.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.57.0
 Mono: successfully reloaded assembly
-- Completed reload, in  0.865 seconds
+- Completed reload, in  0.912 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 5 plugins.
-Preloading 1 native plugins for Editor in 0.06 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.04 ms.
 Unloading 1797 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 85.9 MB.
-System memory in use after: 85.9 MB.
+System memory in use before: 86.8 MB.
+System memory in use after: 86.8 MB.
 
-Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2264.
-Total: 1.889100 ms (FindLiveObjects: 0.201100 ms CreateObjectMapping: 0.088200 ms MarkObjects: 1.489400 ms  DeleteObjects: 0.109900 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Oculus/VR/Textures/Logos/OculusLogoSplash.png
-  artifactKey: Guid(3caded05dba914447a5f85650f9f4ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Textures/Logos/OculusLogoSplash.png using Guid(3caded05dba914447a5f85650f9f4ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9f3fe4d5ac77d9d090afc9512abb70') in 0.069514 seconds
-  Import took 0.071960 seconds .
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 2268.
+Total: 2.012300 ms (FindLiveObjects: 0.220900 ms CreateObjectMapping: 0.043000 ms MarkObjects: 1.659100 ms  DeleteObjects: 0.088400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Plugins/GitHub/Editor/big-logo@2x.png
-  artifactKey: Guid(f81094832d834c64d93b198cb16b6a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/GitHub/Editor/big-logo@2x.png using Guid(f81094832d834c64d93b198cb16b6a3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe85260330f8e91e6ef3e40c7ca9e59') in 0.009173 seconds
-  Import took 0.011533 seconds .
+  path: Assets/Materiaux/New Material.mat
+  artifactKey: Guid(b475f30abb1b1314389688c9befd9d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiaux/New Material.mat using Guid(b475f30abb1b1314389688c9befd9d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8686589c481cf4894b29699be8e10ba0') in 0.107802 seconds
+  Import took 0.110854 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000341 seconds.
-  path: Assets/Oculus/VR/Textures/Logos/OculusLogo.png
-  artifactKey: Guid(a56d69833b6471340bd0029e57449b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Textures/Logos/OculusLogo.png using Guid(a56d69833b6471340bd0029e57449b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bca943eb110a3e1b69bb6ab74cdfa9a') in 0.018178 seconds
-  Import took 0.020604 seconds .
+  Time since last request: 34.727926 seconds.
+  path: Assets/Materiaux/black_metal-self.jpg
+  artifactKey: Guid(44c14100932b53e46ab2ebbc98d65e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiaux/black_metal-self.jpg using Guid(44c14100932b53e46ab2ebbc98d65e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7f747b8acf6a0c1283793a7ef3c10f') in 0.059023 seconds
+  Import took 0.061813 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000313 seconds.
-  path: Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png
-  artifactKey: Guid(fd7cf88ee9b05f94f84bd7686a9669a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/DebugUI/Textures/dialog.png using Guid(fd7cf88ee9b05f94f84bd7686a9669a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '148636057172b309fabffff6f0a908da') in 0.043793 seconds
-  Import took 0.047941 seconds .
+  Time since last request: 1450.379749 seconds.
+  path: Assets/Materiaux/black-metal_selfill.mat
+  artifactKey: Guid(b475f30abb1b1314389688c9befd9d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materiaux/black-metal_selfill.mat using Guid(b475f30abb1b1314389688c9befd9d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9bdeb71fe92b0030382f04ecd6b9ce7') in 0.025673 seconds
+  Import took 0.028685 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
