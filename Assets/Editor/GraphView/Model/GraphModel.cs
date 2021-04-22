@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 namespace iivimat
 {
@@ -13,20 +15,21 @@ namespace iivimat
         {
             nodes = new List<NodeModelBase>();
             edges = new List<EdgeModel>();
+            EditorSceneManager.sceneSaved += OnSceneSaved;        
         }
 
         public void Add(NodeModelBase node)
         {
             nodes.Add(node);
             AssetDatabase.AddObjectToAsset(node, this);
-            AssetDatabase.SaveAssets();
+            //AssetDatabase.SaveAssets();
         }
 
         public void Add(EdgeModel edge)
         {
             edges.Add(edge);
             AssetDatabase.AddObjectToAsset(edge, this);
-            AssetDatabase.SaveAssets();
+            //AssetDatabase.SaveAssets();
         }
 
         public void Remove(NodeModelBase node)
@@ -40,7 +43,7 @@ namespace iivimat
             Undo.RegisterCompleteObjectUndo(this, "");
             nodes.Remove(node);
             AssetDatabase.RemoveObjectFromAsset(node);
-            AssetDatabase.SaveAssets();
+            //AssetDatabase.SaveAssets();
             // ScriptableObject.DestroyImmediate(node, true);
             Undo.DestroyObjectImmediate(node);
 
@@ -58,11 +61,17 @@ namespace iivimat
             Undo.RegisterCompleteObjectUndo(this, "");
             edges.Remove(edge);
             AssetDatabase.RemoveObjectFromAsset(edge);
-            AssetDatabase.SaveAssets();
+            //AssetDatabase.SaveAssets();
             // ScriptableObject.DestroyImmediate(edge, true);
             Undo.DestroyObjectImmediate(edge);
 
             Undo.CollapseUndoOperations(group);
+        }
+
+        static void OnSceneSaved(UnityEngine.SceneManagement.Scene scene)
+        {
+            AssetDatabase.SaveAssets();
+            Debug.Log("Model saved");
         }
 
         public void Clean()

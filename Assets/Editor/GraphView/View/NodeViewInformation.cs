@@ -14,7 +14,7 @@ namespace iivimat{
         public Color backgroundColor = Color.grey;
         public NodeViewInformation(NodeModelInformation nodeModel){
             // SETUP
-            title = nodeModel.Information.Title;
+            //title = nodeModel.Information.Title;
             capabilities |= Capabilities.Movable;
             viewDataKey = nodeModel.guid;
             name = nodeModel.guid;
